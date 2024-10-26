@@ -1,18 +1,18 @@
 from database import db
 
-class Planetas(db.Model):
-    __tablename__='planetas'
-    id_planeta = db.Column(db.Integer, primary_key = True)
-    nome = db.Column(db.String(50))
-    distancia_sol = db.Column(db.Integer)
-    numero_satelites = db.Column(db.Integer)
+class Basquete(db.Model):
+    __tablename__='basquete'
+    id_basquete = db.Column(db.Integer, primary_key = True)
+    nome = db.Column(db.String(100))
+    cidade= db.Column(db.String(50))
+    numero_titulos = db.Column(db.Integer)
 
-    def __init__(self, nome, distancia_sol, numero_satelites):
+    def __init__(self, nome, cidade, numero_titulos):
         self.nome = nome
-        self.distancia_sol = distancia_sol
-        self.numero_satelites = numero_satelites
+        self.cidade = cidade
+        self.numero_titulos = numero_titulos
 
     def __repr__(self):
-        return "<Planetas {}>".format(self.nome)
+        return "<Jogadores de basquete {}>".format(self.nome)
     
         

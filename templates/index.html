@@ -15,19 +15,16 @@
     <table>
         <tr>
             <th>Nome</th>
-            <th>Distância do Sol</th>
-            <th>Número de Satélites</th>
+            <th>Cidade</th>
+            <th>Número de Títulos</th>
         </tr>
-        {% for planeta in dados %}
+        {% for basquete in dados %}
         <tr>
-            <td>{{planeta.nome}}</td>
-            <td>{{planeta.distancia_sol}}</td>
-            <td>{{planeta.numero_satelites}}</td>
+            <td>{{basquete.nome}}</td>
+            <td>{{basquete.cidade}}</td>
+            <td>{{basquete.numero_titulos}}</td>
         </tr>
         {% endfor %}
     </table>
 {% endblock %}
 
-{% block rodape %}
-    &copy; left
-{% endblock %}

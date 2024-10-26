@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Correção</title>
+    <title>Recuperação</title>
     <link rel="stylesheet" href="{{url_for('static',filename='css/estilo.css')}}">
 </head>
 <body>
     <header>
-        <img src="{{url_for('static',filename='img/planeta.png')}}" alt="">
+        <img src="{{url_for('static',filename='img/basquete.png')}}" alt="">
     </header>
     <main>
         {% block conteudo %}
         {% endblock %}
     </main>
-    <footer>
-        {% block rodape %}
-        {% endblock %}
-    </footer>
 </body>
 </html>
