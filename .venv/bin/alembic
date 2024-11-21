@@ -1,4 +1,6 @@
-#!/var/www/Carlos3bimestre/.venv/bin/python
+#!/bin/sh
+'''exec' "/home/carlos/Área de trabalho/3bimLAW/.venv/bin/python" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys
