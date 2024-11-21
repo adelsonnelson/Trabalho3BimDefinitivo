@@ -34,6 +34,7 @@ def save():
         flash('Preencha todos os campos!!!')
         flash("Presta atenção")
         return redirect('/add')
+
     
 if __name__ == '__main__':
     app.run()

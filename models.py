@@ -12,6 +12,7 @@ class Basquete(db.Model):
         self.cidade = cidade
         self.numero_titulos = numero_titulos
 
+
     def __repr__(self):
         return "<Jogadores de basquete {}>".format(self.nome)
     
